@@ -9,18 +9,12 @@ import org.springframework.stereotype.Component;
 public class Synchronized1 implements Runnable {
     private static final Logger logger = LoggerFactory.getLogger(Synchronized1.class);
 
-    @Autowired
-    private SynchronizedObj synchronizedObj;
+    public synchronized void synchronized1Method(){
+        logger.info("我是 Synchronized1...");
+
+    }
     @Override
     public void run() {
-//        for(int i=0;i<100000;i++){
-//            synchronizedObj.addNum();
-//
-//        }
-        for(int i=0;i<500000;i++){
-            synchronizedObj.reduceNum();
-        }
-        logger.info(Thread.currentThread().getName()+":"+synchronizedObj.getNum()+"");
 
     }
 }

@@ -7,8 +7,10 @@ package com.example.javase.templatedesign.templatefuntion;
 */public class SubDemo extends GetTime {
         @Override
         public void code() {
-            for(int y=0; y<10; y++){
-                System.out.println("y");
+            StringBuffer stringBuffer = new StringBuffer();
+
+            for(int y=0; y<10000; y++){
+                stringBuffer.append(y);
             }
         }
 

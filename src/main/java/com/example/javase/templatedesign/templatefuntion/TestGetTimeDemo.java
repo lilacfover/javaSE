@@ -7,8 +7,9 @@ package com.example.javase.templatedesign.templatefuntion;
 */public class TestGetTimeDemo extends GetTime {
     @Override
     public void code() {
-        for(int i=0;i<10;i++) {
-            System.out.println(i);
+        StringBuilder stringBuilder =new StringBuilder();
+        for(int i=0;i<10000;i++) {
+            stringBuilder.append(i);
         }
     }
 }

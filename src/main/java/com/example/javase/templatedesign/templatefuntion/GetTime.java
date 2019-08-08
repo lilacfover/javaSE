@@ -14,7 +14,7 @@ public abstract class GetTime {
         Long start  = System.currentTimeMillis();
         code();
         Long end = System.currentTimeMillis();
-        System.out.println("time:"+(end-start));
+        System.out.println(this.getClass()+"time:"+(end-start));
     }
     public abstract void code();
 }

@@ -30,9 +30,9 @@ package com.example.javase.javabase;
         System.out.println(a>>1); // 0
         System.out.println(a<<1); // 2
         System.out.println(a >>>3 );//0
+
+
         byte c = b>a?d:e;
         System.out.println(c);
-
-
     }
 }

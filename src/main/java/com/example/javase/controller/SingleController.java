@@ -1,7 +1,7 @@
 package com.example.javase.controller;
 
-import com.example.javase.single.Single1;
-import com.example.javase.single.Single2;
+import com.example.javase.designpattern.single.Single1;
+import com.example.javase.designpattern.single.Single2;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;

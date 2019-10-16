@@ -1,4 +1,4 @@
-package com.example.javase.single;
+package com.example.javase.designpattern.single;
 
 /*
 作者：蔡伟

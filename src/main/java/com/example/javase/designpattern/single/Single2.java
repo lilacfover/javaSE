@@ -7,8 +7,8 @@ package com.example.javase.designpattern.single;
 */public class Single2 {
     public final static String a = "hello Single2";
     private Single2(){}
-    private static Single2 s = null;
-    public static Single2 getInstance(){
+    private static volatile Single2 s = null;//保证线程安全
+    public static synchronized Single2 getInstance(){
         if(s == null){
             s = new Single2();
         }
